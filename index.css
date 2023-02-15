@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: rgb(34, 131, 196);
+    --color-warning: rgb(214, 214, 85);
+    --color-danger: rgb(224, 7, 43);
+    --color-danegr-variant: purple;
+    --color-white: white;
+    --color-light: rgb(170, 152, 152);
+    --color-black: black;
+    --container-width: 76%;
+    --container-width1: 90%;
+    --container-width2: 94%;
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: rgb(59, 54, 54);
+
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.nav img {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+/*...... for javascript....*/
+.nav.window-scroll {
+    background-color: var(--color-danegr-variant);
+}
+
+nav {
+    background-color: none;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+/*......................for student login details..............*/
+.login-details{
+    margin-top: 20px;
+    transform: translateY(70px);
+    margin-left: 20%;
+    width: 50%;
+   
+    text-align: center;
+}
+.login-details button{
+    padding: 1rem;
+    margin: .5rem .5rem 0.5rem;
+}
+/*......................student  login details stop.............*/
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li a {
+    margin: 20px;
+    font-size: 17px;
+    transition: var(--transition);
+}
+
+.nav ul li a:hover {
+    font-size: 0.9rem;
+    color: var(--color-warning);
+
+}
+
+/* header start here*/
+header {
+    margin-top: 10rem;
+    padding-left: 8rem;
+}
+
+.left-right {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+}
+
+.left-text button {
+    padding: 1rem;
+    color: var(--color-white);
+    background-color: rgb(233, 4, 4);
+    font-size: 1rem;
+}
+
+.left-text h1 {
+    text-transform: capitalize;
+}
+
+.right-text {
+    position: relative;
+}
+
+.right-text h1 {
+    position: absolute;
+    bottom: 0;
+    color: rgb(233, 4, 4);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+
+/*...... footer side ......*/
+
+footer {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    margin-top: 6rem;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.left-footer p {
+    margin: 1rem 0 2rem;
+}
+
+.left-footer {
+    padding-left: 2rem;
+}
+
+.left-footer {
+    margin-top: 3rem;
+}
+
+.article1 img {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.article1 h5 {
+    font-size: 20px;
+}
+
+.article1 p {
+    font-size: 11px;
+}
+
+/*...... for column and row....*/
+
+
+
+.div1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    margin: 2rem 2rem;
+    margin-right: 6rem;
+    gap: 2rem;
+}
+
+.article1 {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.article1:hover {
+    box-shadow: 0 0.2rem 0 0.5rem rgb(170, 152, 152);
+}
+
+
+
+/*.......test of readystate,.......*
+.t{
+    text-align: center;
+}
+/*........... readstate practice stop here ......*/
+
+
+/* .............. css for another webpage popular courses// courses design css style start here......................*/
+
+/*....for general container......*/
+.first-course {
+    text-align: center;
+    color: var(--color-danger) !important;
+    transform: translateY(3rem);
+    text-transform: uppercase;
+}
+
+.dd {
+    opacity: 0.1;
+    text-decoration: underline;
+}
+
+.popular-courses {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 4rem 4rem;
+
+}
+
+.popular-courses img {
+    width: 5re;
+    height: 7rem;
+    object-fit: cover;
+}
+
+.popular-courses h1,
+h2,
+p {
+    text-transform: capitalize
+}
+
+.article2 {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #6c63ff;
+    transition: var(--transition);
+    width: 20rem;
+
+}
+
+.article2 img {
+
+    width: 100%;
+}
+
+.popular-courses p,
+h2 {
+    text-align: center;
+
+}
+
+.popular-courses p {
+    font-size: 0.8rem;
+}
+
+.popular-courses h2 {
+    font-size: 1rem;
+}
+
+.btn-anchor {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.btn {
+    background-color: var(--color-danger);
+}
+
+.article2:hover {
+    border: 1px solid #6c63ff;
+    background-color: #6c63ff;
+}
+
+/*..........css for another webpage popular courses stop here*/
+
+/*........ faqs messages start here................*/
+
+.faqs-h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    transform: translateY(4rem);
+    color: rgb(233, 4, 4);
+}
+
+.faqs {
+    font-size: 12px;
+    background: #6c63ff;
+    box-shadow: inset 5rem 5rem 9rem 18rem rgba(0, 0, 0.5, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 1rem;
+    background-color: #6c63ff;
+    padding: 2rem;
+    margin: 0 0 0.6rem;
+}
+
+.icon, .icon1 {
+    cursor: pointer;
+    align-self: flex-start;
+    background-color: blu;
+}
+.faq .icon img{
+    display: block;
+}
+.faq .icon1 img{
+    display: none;
+}
+.faq p {
+    margin-top: 0.5rem;
+    display: none;
+}
+.faq.active p{
+    display: block;
+}
+.faq.active .icon img{
+    display: none;
+}
+.faq.active .icon1 img{
+    display: block;
+    transform: translateX(-2rem);
+}
+
+
+/*.......................................end of message box................................*/
+
+
+/*......................................testimonial start here ........................*/
+.h1-testimonial{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+.testimonial-container{
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    overflow: auto;
+    height: 100px;
+    z-index: 1;
+    scroll-behavior: smooth;
+    
+}  
+    .general-testimonial{
+        margin-top: 5rem;
+    }
+    
+.div-testimonial-img {
+    text-align: center;
+   
+}
+.div-testimonial-img img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit:fill;
+    border: 0.5rem solid var(--color-primary);
+    
+}
+
+.div-testimonial-text{
+    text-align: center;
+}
+.div-testimonial-p p{
+    background-color: var(--color-primary);
+    margin: 0 1rem 0;
+    font-size: 12px;
+    text-align: left;
+    overflow: hidden;
+    padding: .5rem;
+}
+.div-testimonial-p{
+    padding: .5rem;
+    position: relative;
+    margin: 1rem;
+    width: 20rem;
+}
+
+.div-testimonial-p p::before{
+    content: "";
+    display: block;
+    background: linear-gradient(transparent,
+     var(--color-primary), var(--color-primary)
+    );
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+   left: 5rem;
+   top: -0.8rem;
+   transform: rotate(45deg);
+   
+} 
+
+
+/*...................testimonial arrows start here.............*/
+.arrow-testimonial img{
+display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1.5rem;;
+    left: -14px;
+    background-color: rgb(205, 205, 218);
+}
+.hidden{
+    position: relative;
+}
+
+/*.................testimonial arrow ends here..............*/
+
+/*..........................................end of testimonial.............................*/
+
+
+/*.......................last footer start...............................*/
+.h1-footer {
+    text-align: center;
+    text-transform: capitalize;
+   
+}
+.last-footer{
+padding-left: 40%;
+background: var(--color-primary);
+padding-bottom: 2%;
+}

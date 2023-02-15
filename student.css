@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: rgb(34, 131, 196);
+    --color-warning: rgb(214, 214, 85);
+    --color-danger: rgb(224, 7, 43);
+    --color-danegr-variant: purple;
+    --color-white: white;
+    --color-light: rgb(170, 152, 152);
+    --color-black: black;
+    --container-width: 76%;
+    --container-width1: 90%;
+    --container-width2: 94%;
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: rgb(59, 54, 54);
+
+}
+
+    /*.......................nav css start here..................*/
+    .nav a {
+        text-decoration: none;
+        color: var(--color-white);
+    }
+    .nav img {
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+    
+    .nav-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .nav ul {
+        display: flex;
+    }
+    
+    .nav ul li a {
+        margin: 20px;
+        font-size: 17px;
+        transition: var(--transition);
+    }
+    
+    .nav ul li a:hover {
+        font-size: 0.9rem;
+        color: var(--color-warning);
+    }
+    /*....................nav css stop here..............*/
+
+
+
+    /*...................student details start here...............*/
+
+    /*.............for table start*/
+.student-container{
+    background-image: linear-gradient(to top, #AEC0CE, #ECECFE );
+    width: 20%;
+    height: 50%;
+    overflow: hidden;
+    transition: .5s;
+    margin: 10px;
+    border-radius: 20px;
+}
+.student-container img{
+    display: block;
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+   margin: 20px auto 10px;
+   box-shadow:  0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.student-container td{
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    color: red;
+}
+.student-container td:nth-child(2){
+    text-align: right;
+}
+.student-details{
+    display: flex;
+    width: max-content;
+    
+}
+.all-student-details{
+    width: 1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 20px auto;
+background-color: none;
+scroll-behavior: smooth;
+scroll-snap-type: bot;
+}
+.all-student-details::-webkit-scrollbar{
+    display: non;
+}
+@media screen and(max-width: 1024) {
+    .student-details{
+        width: calc(33.3vw - 20px);
+    }
+}
+.table-container{
+    margin-bottom: 2rem;
+}
+    /*.............for table ends*/
+
+/*.............for button start*/
+.direction{
+    text-align: center;
+    
+}
+    .next, .prev{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: green;
+    border-radius: 50px;
+    background-color: #2f2f31;
+    transition: 3s ;
+}
+.prev:hover, .next:hover{
+    background-color: aliceblue;
+}
+/*.............for button ends*/
+    /*....................student details stop here................*/
